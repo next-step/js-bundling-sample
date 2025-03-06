@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스코프 오염 체험하기</title>
+
+    <script src="./src/foo.js"></script>
+    <script src="./src/bar.js"></script>
+    <script>
+      addEventListener("DOMContentLoaded", () => {
+        document.querySelector("#ts").innerText = ts;
+        document.querySelector("#js").innerText = js;
+      });
+    </script>
+  </head>
+  <body>
+    <p>Typescript: <span id="ts"></span></p>
+    <p>Javascript: <span id="js"></span></p>
+  </body>
+</html>
